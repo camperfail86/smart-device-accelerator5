@@ -1,0 +1,60 @@
+.main {
+  background-color: #ebebeb;
+}
+
+.main__background {
+  background-color: $color-black-pearl;
+}
+
+@media (min-resolution: 2dppx) and (min-width: $vp-1024) {
+  .main__background {
+    background-image: url(".././img/background@2x.png");
+    background-size: 100% 100%;
+    margin-top: -40px;
+    background-position: center 41px;
+  }
+}
+
+@media (min-width: $vp-1024) {
+  .main__container {
+    width: 1024px;
+    margin: 0 auto;
+  }
+
+  .main__background {
+    background-image: url(".././img/background.webp");
+    background-position: center 41px;
+    margin-top: -40px;
+  }
+
+  .main {
+    color: $color-white;
+    font-family: $ff-mono;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 135%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .main__background {
+    background-image: url(".././img/background.png");
+    height: 581px;
+    margin-top: -40px;
+  }
+
+  .main {
+    color: $color-white;
+    font-family: $ff-mono;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 135%;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__background {
+    margin-top: -35px;
+    height: 525px;
+  }
+}

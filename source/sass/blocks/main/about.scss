@@ -1,0 +1,143 @@
+.about {
+  display: flex;
+}
+
+.about__image img {
+  max-width: 150px;
+  margin-right: 100px;
+
+}
+
+.about__content--addition {
+  display: none;
+}
+
+@media (min-width: $vp-1024) {
+  .about__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-black-pearl;
+    font-family: $ff-mono;
+    margin-top: 12px;
+    margin-bottom: 38px;
+  }
+
+  .about__title {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 51px;
+    color: $color-black-pearl;
+    font-family: $ff-roboto;
+    margin: 0;
+  }
+
+  .about__button {
+    color: $color-sky-blue;
+    background-color: $color-default-white;
+    border: 1px solid $color-sky-blue;
+    border-radius: 3px;
+    padding: 15px 50px;
+    display: block;
+    font-family: $ff-roboto;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .about {
+    margin: 0 auto 100px auto;
+    max-width: 1220px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .about__image img {
+    margin-right: 26px;
+  }
+
+  .about__button {
+    color: $color-sky-blue;
+    background-color: $color-default-white;
+    border: 1px solid $color-sky-blue;
+    border-radius: 3px;
+    padding: 15px 13px;
+    height: 45px;
+    width: 180px;
+    display: block;
+    font-family: $ff-roboto;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .about__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-black-pearl;
+    font-family: $ff-mono;
+    margin-top: 15px;
+    margin-bottom: 12px;
+  }
+
+  .about__content {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-black-pearl;
+    font-family: $ff-mono;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+
+  .about__title {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 51px;
+    color: $color-black-pearl;
+    font-family: $ff-roboto;
+    margin: 0;
+    height: 45px;
+  }
+
+  .about {
+    margin: 0 50px 80px 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about__image {
+    display: none;
+  }
+
+  .about {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 75px;
+  }
+
+  .about__button {
+    width: 160px;
+  }
+
+  .about__title {
+    font-size: 28px;
+    line-height: 140.62%;
+  }
+
+  .about__text {
+    font-size: 14px;
+    line-height: 134.4%;
+    margin-top: 2px;
+  }
+
+  .about__content--addition {
+    font-size: 14px;
+    line-height: 134.4%;
+  }
+}

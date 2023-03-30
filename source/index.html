@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Описание проекта">
+    <title>Smart Device</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preload" href="./fonts/PTMono-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/RobotoCondensed-Bold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/RobotoCondensed-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <svg style="display: none;">
+      <symbol id="x" viewBox="0 0 20 20">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.177086 1.03109C-0.0587882 0.795211 -0.0587881 0.412781 0.177087 0.176905C0.412961 -0.0589705 0.79539 -0.0589706 1.03126 0.176905L10.0001 9.14577L18.9689 0.17691C19.2048 -0.0589653 19.5872 -0.0589653 19.8231 0.176911C20.059 0.412786 20.059 0.795217 19.8231 1.03109L10.8543 9.99996L19.8232 18.9689C20.0591 19.2048 20.0591 19.5872 19.8232 19.8231C19.5873 20.059 19.2049 20.059 18.969 19.8231L10.0001 10.8541L1.03118 19.8231C0.795303 20.059 0.412874 20.059 0.176999 19.8231C-0.0588753 19.5872 -0.0588755 19.2048 0.176999 18.9689L9.14592 9.99996L0.177086 1.03109Z" fill="white"/>
+      </symbol>
+      <symbol id="clock" viewbox="0 0 35 35">
+        <path d="M3.848 11.662 2.054 10.19c-.975-.799-.975-2.1 0-2.9.975-.8 2.56-.8 3.535 0l1.916 1.572C9.503 7.72 11.78 6.93 14.167 6.55V4.51H12.5c-.46 0-.833-.305-.833-.683V2.051C11.667.92 12.788 0 14.167 0h6.666c1.379 0 2.5.92 2.5 2.05v1.778c0 .378-.373.684-.833.684h-1.667V6.55c2.386.379 4.664 1.17 6.662 2.31l1.916-1.57c.974-.8 2.56-.8 3.535 0 .975.799.975 2.1 0 2.9l-1.794 1.471C33.639 14.203 35 17.368 35 20.644 35 28.56 27.15 35 17.5 35S0 28.56 0 20.645c0-3.277 1.361-6.442 3.848-8.983Zm.563-3.405a.969.969 0 0 0-1.179 0c-.324.267-.324.7 0 .967l1.722 1.412c.388-.327.795-.638 1.219-.934L4.41 8.257Zm17.256-6.206c0-.377-.374-.684-.834-.684h-6.666c-.46 0-.834.307-.834.684v1.094h8.334V2.05Zm-5.834 2.46v1.843a21.842 21.842 0 0 1 3.334 0V4.512h-3.334Zm15.935 3.746a.969.969 0 0 0-1.179 0l-1.761 1.445c.423.296.83.607 1.218.934l1.722-1.412c.324-.267.324-.7 0-.967ZM17.5 33.633c8.73 0 15.833-5.827 15.833-12.989 0-3.159-1.398-6.202-3.936-8.57-.7-.653-1.48-1.25-2.32-1.773-2.103-1.313-4.593-2.178-7.2-2.5a19.562 19.562 0 0 0-4.753 0c-2.608.322-5.098 1.187-7.202 2.5-.84.524-1.62 1.12-2.319 1.772-2.538 2.368-3.936 5.412-3.936 8.572 0 7.161 7.103 12.988 15.833 12.988Z" fill="currentColor"/><path d="M17.5 22.695c-1.379 0-2.5-.92-2.5-2.05 0-.892.697-1.651 1.667-1.934V13.81c0-.378.373-.684.833-.684.46 0 .833.306.833.684v4.902c.97.283 1.667 1.043 1.667 1.934 0 1.13-1.121 2.05-2.5 2.05Zm0-2.734c-.46 0-.833.306-.833.684 0 .377.373.683.833.683.46 0 .833-.306.833-.683 0-.378-.373-.684-.833-.684Z" fill="currentColor"/><path d="M8.623 13.433a.596.596 0 0 1 .04-.037l.05-.037c1.468-1.192 3.283-2.074 5.252-2.55.441-.108.905.1 1.035.461.13.362-.122.742-.563.85a11.75 11.75 0 0 0-3.98 1.78l.562.46c.325.268.325.7 0 .968a.932.932 0 0 1-.59.2.932.932 0 0 1-.59-.2l-.563-.462C7.77 16.303 6.873 18.074 6.7 19.96H7.5c.46 0 .833.306.833.684 0 .377-.373.683-.833.683h-.801c.174 1.887 1.07 3.657 2.577 5.096l.564-.463a.968.968 0 0 1 1.179 0c.325.267.325.7 0 .967l-.564.462c1.753 1.237 3.912 1.972 6.212 2.115v-.657c0-.378.373-.684.833-.684.46 0 .833.306.833.684v.657c2.3-.143 4.459-.878 6.212-2.115l-.564-.462c-.325-.267-.325-.7 0-.967a.968.968 0 0 1 1.18 0l.563.463c1.508-1.439 2.403-3.21 2.577-5.096H27.5c-.46 0-.833-.306-.833-.683 0-.378.373-.684.833-.684h.801c-.174-1.887-1.07-3.657-2.577-5.095l-.564.462a.932.932 0 0 1-.589.2.932.932 0 0 1-.59-.2c-.325-.267-.325-.7 0-.967l.563-.461a11.745 11.745 0 0 0-3.98-1.78c-.442-.107-.694-.488-.564-.85s.593-.568 1.035-.462c1.97.477 3.783 1.359 5.252 2.55a.786.786 0 0 1 .05.037l.04.037C28.714 15.367 30 17.926 30 20.645c0 2.718-1.286 5.277-3.623 7.211a.58.58 0 0 1-.04.037l-.045.033c-2.358 1.917-5.478 2.972-8.792 2.972s-6.433-1.055-8.792-2.971l-.045-.034c-.014-.011-.027-.024-.04-.036C6.286 25.922 5 23.363 5 20.645c0-2.719 1.286-5.278 3.623-7.212Z" fill="currentColor"/><path d="M17.5 11.758c-.46 0-.833-.306-.833-.684 0-.377.373-.683.833-.683.46 0 .833.306.833.683 0 .377-.373.684-.833.684Z" fill="currentColor"/>
+      </symbol>
+      <symbol id="tag" viewbox="0 0 35 35">
+        <path d="M11.07 8.585a.689.689 0 0 0-.482-.2.689.689 0 0 0-.484.2.69.69 0 0 0-.2.483c0 .18.073.356.2.483.127.128.304.2.484.2s.356-.072.483-.2a.69.69 0 0 0 .2-.483.69.69 0 0 0-.2-.483Z" fill="#currentColor"/><path d="m34.8 2.859-.845-.847.845-.845A.684.684 0 0 0 33.833.2l-.844.845-.833-.834a.683.683 0 0 0-.484-.2L20.102.003H20.1c-.913 0-1.772.356-2.418 1.002L11.908 6.78a.684.684 0 0 0 .967.967l5.774-5.774A2.04 2.04 0 0 1 20.1 1.37h.002l11.286.007.634.634-2.537 2.537a2.805 2.805 0 0 0-3.419.422 2.783 2.783 0 0 0-.82 1.98c0 .748.291 1.452.82 1.98a2.792 2.792 0 0 0 1.98.82c.717 0 1.434-.273 1.98-.82a2.806 2.806 0 0 0 .425-3.415l2.537-2.537.645.646-.007 11.273a2.04 2.04 0 0 1-.601 1.451L16.344 33.033a2.04 2.04 0 0 1-1.452.601 2.04 2.04 0 0 1-1.452-.601L1.97 21.559a2.04 2.04 0 0 1-.602-1.452c0-.548.214-1.064.602-1.452l7.368-7.37a.684.684 0 0 0-.966-.966L1 17.689A3.399 3.399 0 0 0 0 20.106c0 .914.356 1.773 1.002 2.42L12.473 34a3.41 3.41 0 0 0 2.419 1 3.41 3.41 0 0 0 2.419-1l16.68-16.684a3.4 3.4 0 0 0 1.003-2.417L35 3.342a.683.683 0 0 0-.2-.483Zm-5.74 5.106c-.271.27-.631.42-1.014.42s-.742-.15-1.013-.42a1.435 1.435 0 0 1 1.013-2.447c.139 0 .277.02.41.06l-.789.789a.684.684 0 0 0 .967.967l.787-.787a1.434 1.434 0 0 1-.361 1.418Z" fill="currentColor"/><path d="m29.2 13.764-7.966-7.967a2.71 2.71 0 0 0-3.828 0L4.799 18.406a2.69 2.69 0 0 0-.793 1.914c0 .723.282 1.403.793 1.914l7.967 7.968c.51.51 1.19.793 1.914.793.723 0 1.402-.282 1.913-.793L29.2 17.592a2.69 2.69 0 0 0 .793-1.913 2.69 2.69 0 0 0-.793-1.915Zm-.966 2.862L15.627 29.235a1.33 1.33 0 0 1-.947.392 1.33 1.33 0 0 1-.947-.392l-7.967-7.968a1.33 1.33 0 0 1-.392-.947c0-.358.139-.695.392-.948L18.373 6.764c.261-.262.604-.392.947-.392.343 0 .686.13.947.392l7.966 7.967c.253.253.393.59.393.948 0 .357-.14.694-.393.947Z" fill="#currentColor"/><path d="M22.29 13.677a.684.684 0 0 0-.966-.967l-.394.394c-1.051-.65-2.4-.563-3.252.29a2.48 2.48 0 0 0-.716 1.9 2.876 2.876 0 0 0 .853 1.892c.55.55.611 1.384.137 1.859-.475.474-1.309.413-1.859-.137s-.61-1.384-.136-1.859a.684.684 0 0 0-.967-.967c-.853.853-.94 2.202-.29 3.253l-.468.467a.684.684 0 0 0 .968.967l.467-.467c.46.283.975.427 1.482.427.652 0 1.29-.238 1.77-.717 1.007-1.008.946-2.709-.137-3.792a1.512 1.512 0 0 1-.454-.991 1.13 1.13 0 0 1 .317-.868c.474-.475 1.308-.413 1.858.137s.611 1.384.137 1.858a.684.684 0 0 0 .966.967c.853-.852.94-2.201.29-3.252l.394-.394ZM15.372 25.012 11.86 21.5a.684.684 0 0 0-.967.967l3.51 3.512a.682.682 0 0 0 .968 0 .684.684 0 0 0 0-.967ZM9.988 19.627a.688.688 0 0 0-.483-.2.69.69 0 0 0-.484.2.689.689 0 0 0-.2.484c0 .18.073.356.2.483a.687.687 0 0 0 1.168-.483.688.688 0 0 0-.201-.484Z" fill="#currentColor"/>
+      </symbol>
+      <symbol id="detective" viewbox="0 0 35 35">
+        <path d="M17.5 11.017c-.377 0-.684.358-.684.8 0 .44.307.8.684.8.377 0 .684-.36.684-.8 0-.442-.307-.8-.684-.8Z" fill="#currentColor"/><path d="M32.95 15.814h-2.66C28.886 11.132 26.852 2.922 23.166.598c-1.843-1.16-3.586-.35-4.24 1.297-.28.7-.836 1.068-1.427 1.068-.599 0-1.15-.376-1.426-1.067C15.442.305 13.74-.58 11.962.429 8.218 2.556 6.124 11.096 4.711 15.814H2.05C.918 15.814 0 16.887 0 18.212c0 1.322.92 2.398 2.05 2.398h30.9c1.132 0 2.05-1.073 2.05-2.398 0-1.322-.92-2.398-2.05-2.398ZM7.111 12.616h7.654c.377 0 .683-.358.683-.8 0-.44-.306-.799-.683-.799H7.59c2.06-6.656 3.986-8.59 4.97-9.15 1.073-.608 1.956-.099 2.274.703.502 1.26 1.54 1.992 2.666 1.992 1.13 0 2.166-.735 2.666-1.992.327-.824 1.215-1.28 2.352-.565.989.624 2.908 2.622 4.892 9.012h-7.176c-.377 0-.683.358-.683.8 0 .441.306.8.683.8h7.654c.346 1.165.705 2.367.953 3.197H6.159c.248-.828.606-2.027.953-3.198Zm25.837 6.396H2.051c-.377 0-.684-.36-.684-.8 0-.441.306-.8.684-.8h30.898c.377 0 .684.36.684.8 0 .441-.306.8-.684.8ZM16.133 23.808H5.195c-.377 0-.683.358-.683.8v3.197c0 3.967 2.76 7.195 6.152 7.195 2.57 0 4.846-1.849 5.75-4.634a2.28 2.28 0 0 1 2.171 0C19.49 33.15 21.765 35 24.335 35c3.393 0 6.153-3.228 6.153-7.195v-3.198c0-.441-.306-.8-.683-.8H18.867c-.377 0-.683.359-.683.8v.8h-1.368v-.8c0-.441-.306-.799-.683-.799Zm-5.469 9.593c-2.638 0-4.785-2.51-4.785-5.596v-2.398h9.57v2.398c0 3.094-2.135 5.596-4.785 5.596Zm8.887-7.994h9.57v2.398c0 3.086-2.146 5.596-4.785 5.596-2.657 0-4.785-2.51-4.785-5.596v-2.398Zm-1.367 1.599v.8c0 .255.012.51.035.762a3.432 3.432 0 0 0-1.438 0 8.52 8.52 0 0 0 .035-.763v-.8h1.368Z" fill="#currentColor"/><path d="M10.664 30.203c-1.13 0-2.05-1.076-2.05-2.398 0-.442-.307-.8-.684-.8-.378 0-.684.358-.684.8 0 2.204 1.533 3.997 3.418 3.997.378 0 .684-.358.684-.8 0-.44-.306-.799-.684-.799ZM24.336 31.802c1.885 0 3.418-1.793 3.418-3.997 0-.442-.306-.8-.684-.8-.377 0-.683.358-.683.8 0 1.322-.92 2.398-2.051 2.398-.378 0-.684.358-.684.8 0 .441.306.8.684.8Z" fill="#currentColor"/>
+      </symbol>
+      <symbol id="peoples" viewBox="0 0 35 35">
+        <path d="M31.264 27.893a3.132 3.132 0 0 0 .597-1.842v-4.108a.684.684 0 0 0-.684-.683h-3.055a2.564 2.564 0 0 0-2.561 2.561v2.23c0 .687.222 1.323.596 1.841a4.402 4.402 0 0 0-1.336.445 5.817 5.817 0 0 0-4.294-2.56l-.021-.005a4.02 4.02 0 0 0 1.03-2.69V17.5a.684.684 0 0 0-.684-.684H16.7a3.24 3.24 0 0 0-3.236 3.236v3.03a4.02 4.02 0 0 0 1.03 2.69l-.021.005a5.816 5.816 0 0 0-4.294 2.56c-.42-.22-.87-.369-1.337-.445a3.132 3.132 0 0 0 .597-1.84v-4.109a.684.684 0 0 0-.684-.683H5.7a2.564 2.564 0 0 0-2.56 2.561v2.23c0 .688.221 1.324.596 1.842A4.464 4.464 0 0 0 0 32.291v2.025c0 .378.306.684.684.684h33.632a.684.684 0 0 0 .684-.684v-2.025a4.464 4.464 0 0 0-3.736-4.398ZM4.506 23.821c0-.658.536-1.194 1.194-1.194h2.372v.832c0 .409-.332.74-.74.74H4.506v-.378Zm0 1.746h2.826c.26 0 .51-.048.74-.135v.62c0 .982-.8 1.782-1.783 1.782-.983 0-1.783-.8-1.783-1.783v-.484Zm2.224 3.634-.44.44-.442-.44h.882Zm2.468 2.363v2.069h-7.83V32.29a3.095 3.095 0 0 1 2.588-3.049l1.85 1.85a.684.684 0 0 0 .966 0l1.85-1.85c.327.053.642.158.934.312a5.784 5.784 0 0 0-.358 2.01Zm8.302-5.813a2.672 2.672 0 0 1-2.668-2.668v-.904h4.085c.453 0 .88-.115 1.252-.319v1.223a2.672 2.672 0 0 1-2.669 2.669Zm1.192 1.368L17.5 28.31l-1.192-1.191h2.384Zm-3.86-7.067a1.87 1.87 0 0 1 1.868-1.868h3.469v1.377c0 .69-.562 1.251-1.252 1.251H14.83v-.76Zm9.603 13.58H10.565v-1.366h4.451a.684.684 0 1 0 0-1.368h-4.4a4.455 4.455 0 0 1 3.8-3.738l2.6 2.6a.682.682 0 0 0 .967 0l2.601-2.6a4.451 4.451 0 0 1 3.85 4.404v2.069Zm2.493-9.81c0-.66.536-1.195 1.194-1.195h2.372v.832c0 .409-.332.74-.74.74h-2.826v-.378Zm0 1.745h2.825c.26 0 .51-.048.74-.135v.62c0 .982-.799 1.782-1.782 1.782s-1.783-.8-1.783-1.783v-.484Zm2.224 3.634-.441.44-.44-.44h.88Zm-3.35 4.432v-2.069c0-.706-.127-1.383-.358-2.01.292-.154.606-.26.933-.312l1.85 1.85a.684.684 0 0 0 .967 0l1.85-1.85a3.095 3.095 0 0 1 2.589 3.05v1.34h-7.831ZM20.869 4.466a.684.684 0 0 0-.967 0l-3.354 3.355-1.45-1.45a.684.684 0 1 0-.967.967l1.933 1.933a.684.684 0 0 0 .967 0l3.838-3.838a.684.684 0 0 0 0-.966Z" fill="#currentColor"/><path d="M20.295.593a.684.684 0 0 0-.557 1.248 5.51 5.51 0 0 1 3.264 5.028A5.508 5.508 0 0 1 17.5 12.37a5.508 5.508 0 0 1-5.502-5.501 5.515 5.515 0 0 1 3.24-5.017.683.683 0 1 0-.563-1.246 6.885 6.885 0 0 0-4.044 6.263 6.877 6.877 0 0 0 6.869 6.868 6.876 6.876 0 0 0 6.869-6.868A6.88 6.88 0 0 0 20.295.593Z" fill="#currentColor"/><path d="M17.524 0H17.5a.684.684 0 0 0 0 1.367H17.521A.684.684 0 0 0 17.524 0ZM17.983 31.099a.688.688 0 0 0-.483-.2.689.689 0 0 0-.483.2.689.689 0 0 0-.2.483c0 .18.073.356.2.483.127.128.303.2.483.2a.688.688 0 0 0 .684-.683.689.689 0 0 0-.2-.483Z" fill="#currentColor"/>
+      </symbol>
+    </svg>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <picture class="header__logo">
+            <source media="(max-width: 767px)" srcset="./img/logo-mobile.png">
+            <source media="(min-resolution: 2dppx) and (max-width: 767px)" srcset="./img/logo-mobile@2x.png">
+            <source media="(min-resolution: 2dppx)" srcset="./img/logo@2x.png">
+            <img src="./img/logo.png" width="215" height="55" alt="Логотип Smart Device.">
+          </picture>
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="mailto:info@sd.ru">
+                <img src="./img/svg/mail.svg" width="20" height="20" alt="Почта.">
+                <span class="header__text">info@sd.ru</span>
+              </a>
+            </li>
+            <li class="header__item">
+              <a href="tel:+74950005252">
+                <img src="./img/svg/phone-call.svg" width="20" height="20" alt="Телефон.">
+                <span class="header__text" >+7 (495) 000 52 52</span>
+              </a>
+            </li>
+          </ul>
+          <button class="header__button btn">Заказать звонок</button>
+        </div>
+      </header>
+      <main class="main">
+        <div class="main__background">
+          <div class="main__container">
+            <div class="main__heading heading">
+              <h1 class="heading__title">Печатные платы</h1>
+              <p class="heading__text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
+              <a class="heading__button" href="#form-feedback">
+                <span class="heading__button-text-desktop btn">Получить бесплатную консультацию</span>
+                <span class="heading__button-text-mobile">Бесплатная консультация</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="advantages">
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <svg class="advantages__img" width="35" height="35">
+                <use xlink:href="#clock"></use>
+              </svg>
+              <h2 class="advantages__title">Оперативные сроки</h2>
+              <p class="advantages__text">Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
+            </li>
+            <li class="advantages__item">
+              <svg class="advantages__img" width="35" height="35">
+                <use xlink:href="#peoples"></use>
+              </svg>
+              <h2 class="advantages__title">Крупные поставщики</h2>
+              <p class="advantages__text">Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспечивает хорошее качество нашей продукции.</p>
+            </li>
+            <li class="advantages__item advantages__item--last">
+              <svg class="advantages__img" width="35" height="35">
+                <use xlink:href="#detective"></use>
+              </svg>
+              <h2 class="advantages__title">Полная конфиденциальность</h2>
+              <p class="advantages__text">По желанию клиента&nbsp; мы обеспечиваем полную конфиденциальность.
+              </p>
+            </li>
+            <li class="advantages__item advantages__item--last">
+              <svg class="advantages__img" width="35" height="35">
+                <use xlink:href="#tag"></use>
+              </svg>
+              <h2 class="advantages__title">Персонализация стоимости</h2>
+              <p class="advantages__text">Мы&nbsp;  подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <section class="about">
+          <picture class="about__image">
+            <source media="(min-resolution: 2dppx)" srcset="./img/years@2x.png">
+            <img src="./img/years.png" width="150" height="320" alt="2022 год">
+          </picture>
+          <div class="about__info">
+            <h2 class="about__title">О компании</h2>
+            <p class="about__text">Мы поставляем электронные комплектующие, производим печатные платы и
+              предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.
+              <br><br>
+              Наши поставщики - мировые производители электронных компонентов:
+              OSRAM, CREE, HOLGLITRONIC, REFOND. <span class="about__content--mobile">
+              Печатные платы и комплектующие Service Devices
+              применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ),
+              МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.
+              </span>
+              <span class="about__content about__content--addition">
+                Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов,
+                70% из которых продолжают сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране
+                и 20 городов присутствия.
+                Мы стремимся к постоянному развитию и повышению уровня качества продукции,
+                производимой внутри компании. Использование инновационных технологий помогает экономить деньги и время наших клиентов
+              </span>
+              </p>
+            <button class="about__button btn">Подробнее</button>
+          </div>
+        </section>
+        <div class="goods-services">
+          <div class="goods-services__background">
+            <section class="goods-services__container">
+              <h2 class="goods-services__title">Smart Device предлагает следующие товары и услуги</h2>
+              <span class="goods-services__title-mobile">Товары и услуги Smart Device</span>
+              <ul class="goods-services__list">
+                <li class="goods-services__item goods-services__item--first">
+                  <a href="#">
+                    <p class="goods-services__text">Производство<br> печатных плат</p>
+                    <span class="goods-services__button btn"></span>
+                  </a>
+                </li>
+                <li class="goods-services__item goods-services__item--second" >
+                  <a href="#">
+                    <p class="goods-services__text">Монтаж<br class="br-first"> печатных<br class="br-second"> плат</p>
+                    <span class="goods-services__button btn"></span>
+                  </a>
+                </li>
+                <li class="goods-services__item goods-services__item--third">
+                  <a href="#">
+                    <p class="goods-services__text">Комплектующие<br> для светотехники</p>
+                    <span class="goods-services__button btn"></span>
+                  </a>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+        <form method="post" action="https://echo.htmlacademy.ru/" id="form-feedback">
+          <div class="form">
+            <div class="form__background">
+              <picture class="form__image">
+                <source media="(min-resolution: 2dppx)" srcset="./img/paper@2x.png">
+                <img src="./img/paper.png" width="510" height="285" alt="Бумажный самолет.">
+              </picture>
+              <section>
+                <h2 class="form__title">Остались вопросы? Задайте их нам!</h2>
+                <p class="form__text">Мы проконсультируем Вас бесплатно</p>
+                <div class="form__inputs">
+                  <input class="form__input" name="name" type="text" minlength="1" placeholder="Имя">
+                  <input class="form__input form__input--telephone" name="telephone" type="text" placeholder="Телефон">
+                </div>
+                <textarea class="form__textarea" name="question" id="textarea" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
+                <div class="form__buttons">
+                  <button class="form__button">Задать вопрос</button>
+                  <label class="form__approve">
+                    <input class="form__approve--input visually-hidden" name="approval" type="checkbox">
+                    <span class="form__approve--img"></span>
+                    Я согласен на обработку персональных данных
+                  </label>
+                </div>
+              </section>
+            </div>
+          </div>
+        </form>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__socials socials">
+            <picture class="footer__logo">
+              <source media="(min-resolution: 2dppx)" srcset="./img/logo@2x.png">
+              <img src="./img/logo.png" alt="Логотип Smart Device.">
+            </picture>
+            <ul class="socials__list">
+              <li class="socials__item">
+                <a href="#">
+                  <img src="./img/svg/ok.svg" width="30" height="30" alt="Одноклассники.">
+                </a>
+              </li>
+              <li class="socials__item">
+                <a href="#">
+                  <img src="./img/svg/vk.svg" width="30" height="30" alt="Вконтакте.">
+                </a>
+              </li>
+              <li class="socials__item">
+                <a href="#">
+                  <img src="./img/svg/pinterest.svg" width="30" height="30" alt="Pinterest.">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__down">
+            <div class="footer__navigation navigation">
+              <p class="navigation__title">Разделы сайта
+                <span class="navigation__minus plus"></span>
+              </p>
+              <ul class="navigation__list">
+                <li class="navigation__left">
+                  <ul>
+                    <li class="navigation__item">
+                      <a href="#">О Компании</a>
+                      </li>
+                    <li class="navigation__item">
+                      <a href="#">Продукты</a>
+                      </li>
+                    <li class="navigation__item">
+                      <a href="#">Производство печатных плат</a>
+                      </li>
+                    <li class="navigation__item">
+                      <a href="#">Монтаж печатных плат</a>
+                      </li>
+                  </ul>
+                </li>
+                <li class="navigation__right">
+                  <ul>
+                    <li class="navigation__item">
+                      <a href="#">Комплектующие</a>
+                      </li>
+                    <li class="navigation__item">
+                      <a href="#">Доставка</a>
+                      </li>
+                    <li class="navigation__item">
+                      <a href="#">Контакты</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__address address">
+                <p class="address__title">Наш офис
+                  <span class="address__minus plus"></span>
+                </p>
+                <ul class="address__list">
+                  <li class="address__item">г. Мытищи, Олимпийский проспект, д.10</li>
+                  <li class="address__item">
+                    <a href="tel:+74955894050">+7 (495) 589-40-50</a>
+                  </li>
+                  <li class="address__item">
+                    <a href="tel:+79253895829">+7 (925) 389-58-29</a>
+                  </li>
+                  <li class="address__item">
+                    <a href="tel:+79253647813">+7 (925) 364-78-13</a>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- Модалки -->
+    <div class="modal modal--preload" data-modal="feedback">
+      <div class="modal__wrapper">
+        <div class="modal__overlay" data-close-modal></div>
+        <form method="post" action="https://echo.htmlacademy.ru/" id="form-feedback">
+          <div class="modal__content">
+            <div class="modal__description">
+              <h2 class="modal__title">Закажите звонок</h2>
+              <p class="modal__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+              <div class="modal__inputs">
+                <input class="modal__input" id="modal__input-name" name="name" type="text" minlength="1" placeholder="Имя" required autofocus>
+                <input class="modal__input modal__input--telephone" name="telephone" type="text" placeholder="Телефон" required>
+              </div>
+              <textarea class="modal__textarea" name="question" id="textarea1" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
+              <div class="modal__buttons">
+                <button class="modal__button">Отправить</button>
+                <label class="modal__approve">
+                  <input class="modal__approve--input visually-hidden" name="approval" type="checkbox">
+                  <span class="modal__approve--img"></span>
+                  Я согласен на обработку&nbsp; персональных данных
+                </label>
+              </div>
+            </div>
+            <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+              <svg width="15" height="15">
+                <use xlink:href="#x"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

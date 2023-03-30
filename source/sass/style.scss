@@ -1,0 +1,43 @@
+// Vendor
+// ---------------------------------
+
+@import "vendor/normalize";
+
+
+// Global
+// ---------------------------------
+
+@import "./global";
+@import "variables";
+@import "mixins";
+@import "./fonts";
+@import "global/reboot";
+@import "global/utils";
+@import "global/container";
+@import "global/svg";
+
+// Blocks
+// ---------------------------------
+
+@import "blocks/btn";
+@import "blocks/modal";
+@import "blocks/custom-input";
+@import "blocks/custom-toggle";
+@import "blocks/custom-select";
+@import "blocks/header";
+@import "blocks/footer";
+
+// Main
+
+@import "blocks/main/heading";
+@import "blocks/main/main";
+@import "blocks/main/advantages";
+@import "blocks/main/about";
+@import "blocks/main/goods-services";
+@import "blocks/main/form";
+
+// Footer
+
+@import "blocks/footer/address";
+@import "blocks/footer/navigation";
+@import "blocks/footer/socials";

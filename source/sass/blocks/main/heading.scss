@@ -1,0 +1,142 @@
+
+@media (min-width: $vp-1024) {
+  .heading__title {
+    text-transform: uppercase;
+    font-family: $ff-roboto;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 94px;
+    margin: 0;
+    letter-spacing: 0.07em;
+  }
+
+  .heading__button {
+    font-family: $ff-roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    background-color: $color-sky-blue;
+    color: $color-white;
+    border-radius: 3px;
+    border: none;
+    padding: 15px 25px;
+    width: 410px;
+    display: block;
+  }
+
+  .heading__text {
+    width: 685px;
+    margin: 37px 0 48px 0;
+    font-size: 22px;
+    line-height: 155%;
+  }
+
+  .heading__button-text-desktop {
+    display: inline;
+  }
+
+  .heading__button-text-mobile {
+    display: none;
+  }
+
+  .heading {
+    padding-top: 340px;
+    padding-left: 27px;
+    padding-bottom: 280px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .heading__button {
+    font-family: $ff-roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    background-color: $color-sky-blue;
+    color: $color-white;
+    border-radius: 3px;
+    border: none;
+    padding: 15px 25px;
+    width: 410px;
+    margin-left: 45px;
+  }
+
+  .heading__text {
+    margin: 24px 0 74px 0;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 155%;
+    font-family: $ff-mono;
+    width: 609px;
+  }
+
+  .heading__button-text-desktop {
+    display: inline;
+  }
+
+  .heading__button-text-mobile {
+    display: none;
+  }
+
+  .heading__title {
+    text-transform: uppercase;
+    font-family: $ff-roboto;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 94px;
+    letter-spacing: 0.07em;
+    margin: 0;
+    height: 60px;
+  }
+
+  .heading {
+    padding-left: 50px;
+    padding-top: 111px;
+  }
+}
+
+@media (max-width: 767px) {
+  .heading__button-text-desktop {
+    display: none;
+  }
+
+  .heading__button-text-mobile {
+    display: inline;
+  }
+
+  .heading__button {
+    width: 270px;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 12px 30px;
+    margin-left: 0;
+    display: block;
+  }
+
+  .heading__text {
+    margin: 32px 0 46px 0;
+    width: 270px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 155%;
+  }
+
+  .heading__title {
+    font-size: 36px;
+    line-height: 42px;
+    width: 270px;
+  }
+
+  .heading {
+    padding-left: 25px;
+    padding-top: 115px;
+  }
+}

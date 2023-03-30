@@ -1,0 +1,129 @@
+.navigation {
+  margin-right: 125px;
+}
+
+.navigation__item a {
+  color: #ffffffb3;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.navigation__title {
+  font-family: $ff-roboto;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 23px;
+  margin-top: 10px;
+}
+
+.navigation__list {
+  font-family: $ff-mono;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 135%;
+  color: rgba(255, 255, 255, 0.7);
+  display: flex;
+}
+
+.navigation__item {
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.navigation__right {
+  width: 116px;
+}
+
+@media (max-width: 1023px) {
+  .navigation {
+    margin-right: 0;
+  }
+
+  .navigation__left {
+    margin-right: 145px;
+  }
+
+  .navigation__item {
+    margin-bottom: 8px;
+  }
+
+  .navigation__list {
+    display: flex;
+    flex-direction: column;
+    font-family: $ff-mono;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 135%;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .navigation__title {
+    margin-bottom: 25px;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .navigation__title {
+    height: 60px;
+    padding: 20px 25px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 0;
+
+    &::after {
+      position: absolute;
+      content: "";
+      display: block;
+      height: 1px;
+      width: 100%;
+      background: rgba(248, 253, 255, 0.7);
+      left: 0;
+      top: 0;
+    }
+  }
+
+  .navigation {
+    margin-right: 0;
+  }
+
+  .navigation__list {
+    padding-left: 25px;
+  }
+
+  .navigation__item {
+    &:last-child {
+      margin-bottom: 20px;
+    }
+  }
+
+  .navigation__minus {
+    width: 15px;
+    height: 15px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      display: block;
+      height: 1px;
+      width: 100%;
+      background: rgba(248, 253, 255, 0.7);
+      top: 50%;
+      left: 0;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.plus {
+  width: 15px;
+  height: 15px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    background: rgba(248, 253, 255, 0.7);
+    top: 50%;
+    left: 0;
+    transform: rotate(90deg);
+  }
+}
+
+.br-first {
+  display: none;
+}
+
+.br-second {
+  display: none;
+}
+
+
+@media (min-width: 1024px) {
+  .br-second {
+    display: inline;
+  }
+}
+
+@media (max-width: 1023px) {
+  .br-first {
+    display: block;
+  }
+}
