@@ -45,19 +45,19 @@
           </picture>
           <ul class="header__list">
             <li class="header__item">
-              <a href="mailto:info@sd.ru">
+              <a href="mailto:info@sd.ru" tabindex="6">
                 <img src="./img/svg/mail.svg" width="20" height="20" alt="Почта.">
                 <span class="header__text">info@sd.ru</span>
               </a>
             </li>
             <li class="header__item">
-              <a href="tel:+74950005252">
+              <a href="tel:+74950005252" tabindex="7">
                 <img src="./img/svg/phone-call.svg" width="20" height="20" alt="Телефон.">
-                <span class="header__text" >+7 (495) 000 52 52</span>
+                <span class="header__text">+7 (495) 000 52 52</span>
               </a>
             </li>
           </ul>
-          <button class="header__button btn">Заказать звонок</button>
+          <button class="header__button btn" tabindex="8">Заказать звонок</button>
         </div>
       </header>
       <main class="main">
@@ -66,7 +66,7 @@
             <div class="main__heading heading">
               <h1 class="heading__title">Печатные платы</h1>
               <p class="heading__text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-              <a class="heading__button" href="#form-feedback">
+              <a class="heading__button" href="#form-feedback" tabindex="9">
                 <span class="heading__button-text-desktop btn">Получить бесплатную консультацию</span>
                 <span class="heading__button-text-mobile">Бесплатная консультация</span>
               </a>
@@ -119,19 +119,13 @@
               <br><br>
               Наши поставщики - мировые производители электронных компонентов:
               OSRAM, CREE, HOLGLITRONIC, REFOND. <span class="about__content--mobile">
-              Печатные платы и комплектующие Service Devices
-              применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ),
-              МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.
+                Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.
               </span>
               <span class="about__content about__content--addition">
-                Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов,
-                70% из которых продолжают сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране
-                и 20 городов присутствия.
-                Мы стремимся к постоянному развитию и повышению уровня качества продукции,
-                производимой внутри компании. Использование инновационных технологий помогает экономить деньги и время наших клиентов
+                Smart Device — это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых продолжают сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране и 20 городов присутствия. Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и время наших клиентов
               </span>
               </p>
-            <button class="about__button btn">Подробнее</button>
+            <button class="about__button btn" tabindex="10">Подробнее</button>
           </div>
         </section>
         <div class="goods-services">
@@ -141,19 +135,19 @@
               <span class="goods-services__title-mobile">Товары и услуги Smart Device</span>
               <ul class="goods-services__list">
                 <li class="goods-services__item goods-services__item--first">
-                  <a href="#">
+                  <a href="#" tabindex="11">
                     <p class="goods-services__text">Производство<br> печатных плат</p>
                     <span class="goods-services__button btn"></span>
                   </a>
                 </li>
                 <li class="goods-services__item goods-services__item--second" >
-                  <a href="#">
+                  <a href="#" tabindex=12">
                     <p class="goods-services__text">Монтаж<br class="br-first"> печатных<br class="br-second"> плат</p>
                     <span class="goods-services__button btn"></span>
                   </a>
                 </li>
                 <li class="goods-services__item goods-services__item--third">
-                  <a href="#">
+                  <a href="#" tabindex="13">
                     <p class="goods-services__text">Комплектующие<br> для светотехники</p>
                     <span class="goods-services__button btn"></span>
                   </a>
@@ -173,14 +167,14 @@
                 <h2 class="form__title">Остались вопросы? Задайте их нам!</h2>
                 <p class="form__text">Мы проконсультируем Вас бесплатно</p>
                 <div class="form__inputs">
-                  <input class="form__input" name="name" type="text" minlength="1" placeholder="Имя">
-                  <input class="form__input form__input--telephone" name="telephone" type="text" placeholder="Телефон">
+                  <input class="form__input" name="name" type="text" minlength="1" placeholder="Имя" tabindex="14" required>
+                  <input class="form__input form__input--telephone" name="telephone" type="text" placeholder="Телефон" tabindex="15" required>
                 </div>
-                <textarea class="form__textarea" name="question" id="textarea" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
+                <textarea class="form__textarea" name="question" id="textarea" cols="30" rows="10" placeholder="Ваш вопрос" tabindex="16" required></textarea>
                 <div class="form__buttons">
-                  <button class="form__button">Задать вопрос</button>
+                  <button class="form__button" tabindex="17">Задать вопрос</button>
                   <label class="form__approve">
-                    <input class="form__approve--input visually-hidden" name="approval" type="checkbox">
+                    <input class="form__approve--input visually-hidden" name="approval" type="checkbox" tabindex="18">
                     <span class="form__approve--img"></span>
                     Я согласен на обработку персональных данных
                   </label>
@@ -199,17 +193,17 @@
             </picture>
             <ul class="socials__list">
               <li class="socials__item">
-                <a href="#">
+                <a href="#" tabindex="19">
                   <img src="./img/svg/ok.svg" width="30" height="30" alt="Одноклассники.">
                 </a>
               </li>
               <li class="socials__item">
-                <a href="#">
+                <a href="#" tabindex="20">
                   <img src="./img/svg/vk.svg" width="30" height="30" alt="Вконтакте.">
                 </a>
               </li>
               <li class="socials__item">
-                <a href="#">
+                <a href="#" tabindex="21">
                   <img src="./img/svg/pinterest.svg" width="30" height="30" alt="Pinterest.">
                 </a>
               </li>
@@ -224,29 +218,29 @@
                 <li class="navigation__left">
                   <ul>
                     <li class="navigation__item">
-                      <a href="#">О Компании</a>
+                      <a href="#" tabindex="22">О Компании</a>
                       </li>
                     <li class="navigation__item">
-                      <a href="#">Продукты</a>
+                      <a href="#" tabindex="23">Продукты</a>
                       </li>
                     <li class="navigation__item">
-                      <a href="#">Производство печатных плат</a>
+                      <a href="#" tabindex="24">Производство печатных плат</a>
                       </li>
                     <li class="navigation__item">
-                      <a href="#">Монтаж печатных плат</a>
+                      <a href="#" tabindex="25">Монтаж печатных плат</a>
                       </li>
                   </ul>
                 </li>
                 <li class="navigation__right">
                   <ul>
                     <li class="navigation__item">
-                      <a href="#">Комплектующие</a>
+                      <a href="#" tabindex="26">Комплектующие</a>
                       </li>
                     <li class="navigation__item">
-                      <a href="#">Доставка</a>
+                      <a href="#" tabindex="27">Доставка</a>
                       </li>
                     <li class="navigation__item">
-                      <a href="#">Контакты</a>
+                      <a href="#" tabindex="28">Контакты</a>
                     </li>
                   </ul>
                 </li>
@@ -257,15 +251,15 @@
                   <span class="address__minus plus"></span>
                 </p>
                 <ul class="address__list">
-                  <li class="address__item">г. Мытищи, Олимпийский проспект, д.10</li>
+                  <li class="address__item address__item--city">г. Мытищи, Олимпийский проспект, д.10</li>
                   <li class="address__item">
-                    <a href="tel:+74955894050">+7 (495) 589-40-50</a>
+                    <a href="tel:+74955894050" tabindex="29">+7 (495) 589-40-50</a>
                   </li>
                   <li class="address__item">
-                    <a href="tel:+79253895829">+7 (925) 389-58-29</a>
+                    <a href="tel:+79253895829" tabindex="30">+7 (925) 389-58-29</a>
                   </li>
                   <li class="address__item">
-                    <a href="tel:+79253647813">+7 (925) 364-78-13</a>
+                    <a href="tel:+79253647813" tabindex="31">+7 (925) 364-78-13</a>
                   </li>
                 </ul>
             </div>
@@ -283,21 +277,21 @@
               <h2 class="modal__title">Закажите звонок</h2>
               <p class="modal__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
               <div class="modal__inputs">
-                <input class="modal__input" id="modal__input-name" name="name" type="text" minlength="1" placeholder="Имя" required autofocus>
-                <input class="modal__input modal__input--telephone" name="telephone" type="text" placeholder="Телефон" required>
+                <input class="modal__input" id="modal__input-name" name="name" type="text" minlength="1" placeholder="Имя" tabindex="1" autofocus required>
+                <input class="modal__input modal__input--telephone" name="telephone" type="text" placeholder="Телефон" tabindex="2" required>
               </div>
-              <textarea class="modal__textarea" name="question" id="textarea1" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
+              <textarea class="modal__textarea" name="question" id="textarea1" cols="30" rows="10" placeholder="Ваш вопрос" tabindex="3" required></textarea>
               <div class="modal__buttons">
-                <button class="modal__button">Отправить</button>
+                <button class="modal__button" tabindex="5">Отправить</button>
                 <label class="modal__approve">
-                  <input class="modal__approve--input visually-hidden" name="approval" type="checkbox">
+                  <input class="modal__approve--input visually-hidden" name="approval" type="checkbox" tabindex="4">
                   <span class="modal__approve--img"></span>
                   Я согласен на обработку&nbsp; персональных данных
                 </label>
               </div>
             </div>
             <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-              <svg width="15" height="15">
+              <svg width="20" height="20">
                 <use xlink:href="#x"></use>
               </svg>
             </button>

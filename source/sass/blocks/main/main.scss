@@ -1,5 +1,5 @@
 .main {
-  background-color: #ebebeb;
+  background-color: #f8fdff;
 }
 
 .main__background {
@@ -39,7 +39,7 @@
 @media (max-width: 1023px) {
   .main__background {
     background-image: url(".././img/background.png");
-    height: 581px;
+    // height: 581px;
     margin-top: -40px;
   }
 
@@ -55,6 +55,6 @@
 @media (max-width: 767px) {
   .main__background {
     margin-top: -35px;
-    height: 525px;
+    height: 520px;
   }
 }

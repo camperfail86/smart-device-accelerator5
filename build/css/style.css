@@ -690,6 +690,10 @@ button,
   left: 9px;
 }
 
+.modal__approve--input:focus-visible + span {
+  outline: solid #000000 1px;
+}
+
 .modal {
   position: fixed;
   top: 0;
@@ -706,7 +710,7 @@ button,
   flex-direction: column;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  background-color: rgba(0, 0, 0, 0.7);
+  background: rgba(3, 16, 27, 0.7);
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
@@ -755,15 +759,16 @@ button,
 
 .modal__content {
   position: relative;
+  border-radius: 3px;
   width: 500px;
-  padding: 38px 40px;
+  padding: 38px 40px 45px 40px;
   background-color: #00b2ff;
 }
 
 .modal__close-btn {
   position: absolute;
-  top: 22px;
-  right: 22px;
+  top: 18px;
+  right: 15px;
   z-index: 1;
   width: 40px;
   height: 40px;
@@ -1481,7 +1486,7 @@ button,
 }
 
 .main {
-  background-color: #ebebeb;
+  background-color: #f8fdff;
 }
 
 .main__background {
@@ -1833,6 +1838,10 @@ button,
   content: url(".././img/svg/checkbox.svg");
 }
 
+.form__approve--input:focus-visible + span {
+  outline: solid #000000 1px;
+}
+
 .form__approve--img {
   position: absolute;
   content: url(".././img/svg/checkbox2.svg");
@@ -1870,7 +1879,7 @@ button,
 }
 
 .address__item {
-  margin-bottom: 10px;
+  margin-bottom: 9px;
   cursor: pointer;
 }
 
@@ -1998,11 +2007,13 @@ button,
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center;
-    padding-right: 30px;
+    padding-right: 20px;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
     min-height: 40px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 
   .header__logo {
@@ -2149,6 +2160,8 @@ button,
   }
 
   .header__button {
+    margin-top: 4px;
+    margin-bottom: 14px;
     font-size: 18px;
     line-height: 16px;
     text-align: center;
@@ -2162,7 +2175,6 @@ button,
     width: 135px;
     display: block;
     font-family: "Roboto Condensed", "Arial", sans-serif;
-    height: 80%;
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
   }
@@ -2441,10 +2453,11 @@ button,
     padding: 15px 25px;
     width: 410px;
     margin-left: 45px;
+    display: block;
   }
 
   .heading__text {
-    margin: 24px 0 74px 0;
+    margin: 24px 0 60px 0;
     font-weight: 400;
     font-size: 22px;
     line-height: 155%;
@@ -2474,11 +2487,11 @@ button,
   .heading {
     padding-left: 50px;
     padding-top: 111px;
+    padding-bottom: 207px;
   }
 
   .main__background {
     background-image: url(".././img/background.png");
-    height: 581px;
     margin-top: -40px;
   }
 
@@ -2864,12 +2877,12 @@ button,
 
   .heading {
     padding-left: 25px;
-    padding-top: 115px;
+    padding-top: 110px;
   }
 
   .main__background {
     margin-top: -35px;
-    height: 525px;
+    height: 520px;
   }
 
   .advantages__item {
@@ -3087,7 +3100,7 @@ button,
 
   .address__title {
     height: 60px;
-    padding: 20px 25px;
+    padding: 20px 31px;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -3113,14 +3126,18 @@ button,
   }
 
   .address__list {
-    padding-left: 25px;
+    padding-left: 32px;
   }
 
   .address__item {
     font-size: 14px;
     line-height: 135%;
     margin-top: -3px;
-    margin-bottom: 17px;
+    margin-bottom: 16px;
+  }
+
+  .address__item--city {
+    margin-bottom: 20px;
   }
 
   .address__minus {
@@ -3292,6 +3309,14 @@ button,
     padding-right: 20px;
   }
 
+  .goods-services__list {
+    max-width: 980px;
+  }
+
+  .goods-services__item {
+    max-width: 270px;
+  }
+
   .socials {
     padding-left: 20px;
   }
@@ -3306,6 +3331,12 @@ button,
 
   .header__button {
     margin-left: -10px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+  .header__list {
+    gap: 3px;
   }
 }
 

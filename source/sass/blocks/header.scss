@@ -88,6 +88,8 @@
   }
 
   .header__button {
+    margin-top: 4px;
+    margin-bottom: 14px;
     font-size: 18px;
     line-height: 16px;
     text-align: center;
@@ -101,8 +103,13 @@
     width: 135px;
     display: block;
     font-family: $ff-roboto;
-    height: 80%;
     box-sizing: content-box;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+  .header__list {
+    gap: 3px;
   }
 }
 
@@ -187,9 +194,10 @@
     width: 100px;
     margin: 0;
     align-self: center;
-    padding-right: 30px;
+    padding-right: 20px;
     justify-content: space-between;
     min-height: 40px;
+    flex-wrap: wrap;
   }
 
   .header__logo {

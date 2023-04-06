@@ -135,6 +135,10 @@
   content: url(".././img/svg/checkbox.svg");
 }
 
+.form__approve--input:focus-visible + span {
+  outline: solid $color-default-black 1px;
+}
+
 .form__approve--img {
   position: absolute;
   content: url(".././img/svg/checkbox2.svg");

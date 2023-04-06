@@ -104,7 +104,7 @@ closeModalButton.addEventListener('click', () => {
 openModalButton.addEventListener('click', () => {
   modal.classList.add('is-active');
   body.style.overflow = 'hidden';
-  inputName.focus();
+  setTimeout(()=>inputName.focus(), 500);
 });
 modal.addEventListener('click', (e) => {
   const click = e.composedPath().includes(modalOverlay);

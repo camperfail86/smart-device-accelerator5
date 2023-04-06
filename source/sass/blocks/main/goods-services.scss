@@ -77,6 +77,14 @@
     padding-left: 20px;
     padding-right: 20px;
   }
+
+  .goods-services__list {
+    max-width: 980px;
+  }
+
+  .goods-services__item {
+    max-width: 270px;
+  }
 }
 
 @media (min-width: 1024px) {
