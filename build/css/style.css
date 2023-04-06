@@ -3311,6 +3311,7 @@ button,
 
   .goods-services__list {
     max-width: 980px;
+    gap: 75px;
   }
 
   .goods-services__item {
@@ -3337,6 +3338,12 @@ button,
 @media (min-width: 320px) and (max-width: 1024px) {
   .header__list {
     gap: 3px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1048px) {
+  .main__container {
+    width: 1006px;
   }
 }
 
